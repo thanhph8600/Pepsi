@@ -1,0 +1,384 @@
+var dealerObj = [
+    {
+        "img" : "./imgs/dealer1.jpg",
+        "name" : "Market Valbonne",
+        "timeOppen" : "8:00",
+        "timeLose" : "20:00",
+        "dress" : "Rte des Macarons, 06560 Valbonne, France",
+        "number" : "+33 492 915 961",
+        "map" : "https://www.google.com/maps/place/Market+Valbonne/@43.6451495,7.0472854,16.92z/data=!4m9!1m2!2m1!1ssupermarket+france!3m5!1s0x12cc2be2f649a40b:0xbce182f200fdd377!8m2!3d43.6458027!4d7.0489736!15sChJzdXBlcm1hcmtldCBmcmFuY2VaFCISc3VwZXJtYXJrZXQgZnJhbmNlkgELc3VwZXJtYXJrZXTgAQA",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer2.jpg",
+        "name" : "Carrefour Express",
+        "timeOppen" : "7:00",
+        "timeLose" : "22:00",
+        "dress" : "3 Pl. du Pays de France, 95700 Roissy-en-France, France",
+        "number" : "+33 139 861 533",
+        "map" : "https://www.google.com/maps/place/Carrefour+Express/@49.0059984,2.4954761,14.05z/data=!4m10!1m2!2m1!1ssupermarket+france!3m6!1s0x47e61582af0da631:0x4a43f4c787803c6c!8m2!3d49.0043125!4d2.5159564!15sChJzdXBlcm1hcmtldCBmcmFuY2VaFCISc3VwZXJtYXJrZXQgZnJhbmNlkgELc3VwZXJtYXJrZXTgAQA!16s%2Fg%2F12jlnxtdn",
+        "area" : 1
+    },
+    {
+        "img" : "./imgs/dealer3.jpg",
+        "name" : "Carrefour City",
+        "timeOppen" : "7:00",
+        "timeLose" : "21:00",
+        "dress" : "19 Rue du Faubourg Saint-Jean, 45000 Orléans, France",
+        "number" : "+33 238 770 750",
+        "map" : "https://www.google.com/maps/place/Carrefour+City/@47.9051873,1.876533,15.05z/data=!4m10!1m2!2m1!1ssupermarket+france!3m6!1s0x47e4e52cc11fd5f7:0x10634f28856ad597!8m2!3d47.9051201!4d1.8924379!15sChJzdXBlcm1hcmtldCBmcmFuY2VaFCISc3VwZXJtYXJrZXQgZnJhbmNlkgELc3VwZXJtYXJrZXTgAQA!16s%2Fg%2F1xgrm707",
+        "area" : 1
+
+    },
+    {
+        "img" : "./imgs/dealer4.png",
+        "name" : "Carrefour Coquelles",
+        "timeOppen" : "8:00",
+        "timeLose" : "22:00",
+        "dress" : "Cite De L'europe, Bd du Kent, 62231 Coquelles, France",
+        "number" : "+33 391 910 279",
+        "map" : "https://www.google.com/maps/place/Carrefour+Coquelles/@50.9378845,1.7723752,13z/data=!3m1!5s0x47dc3ec223a7cc3d:0xd1063be302a7616b!4m11!1m3!2m2!1ssupermarket+france!6e2!3m6!1s0x47dc3ec155bb8fa5:0x1f2a0bf6635d8d16!8m2!3d50.93374!4d1.809074!15sChJzdXBlcm1hcmtldCBmcmFuY2VaFCISc3VwZXJtYXJrZXQgZnJhbmNlkgELc3VwZXJtYXJrZXTgAQA!16s%2Fg%2F11cnd5cq60",
+        "area" : 1
+
+    },
+    {
+        "img" : "./imgs/dealer5.jpg",
+        "name" : "Carrefour Market Massy",
+        "timeOppen" : "8:00",
+        "timeLose" : "20:00",
+        "dress" : "2 Rue des Canadiens, 91300 Massy, France",
+        "number" : "+33 169 201 010",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+
+    },
+    {
+        "img" : "./imgs/dealer6.jpg",
+        "name" : "Diagonal",
+        "timeOppen" : "8:00",
+        "timeLose" : "00:00",
+        "dress" : "53 Rue de la Harpe, 75005 Paris, France",
+        "number" : "+33 169 201 110",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer7.jpg",
+        "name" : "Clermont-Ferrand Jaude",
+        "timeOppen" : "8:00",
+        "timeLose" : "22:00",
+        "dress" : "10 Rue Barrière de Jaude, 63000 Clermont-Ferrand, France",
+        "number" : "+33 169 654 110",
+        "map" : "https://www.google.com/maps",
+        "area" : 1
+    },
+    {
+        "img" : "./imgs/dealer8.jpg",
+        "name" : "lyon france",
+        "timeOppen" : "8:00",
+        "timeLose" : "21:00",
+        "dress" : "69002 Lyon, France",
+        "number" : "+33 687 654 110",
+        "map" : "https://www.google.com/maps",
+        "area" : 1
+    },
+    {
+        "img" : "./imgs/dealer9.jpg",
+        "name" : "Le Petit Casino",
+        "timeOppen" : "8:00",
+        "timeLose" : "20:00",
+        "dress" : "69002 Lyon, France",
+        "number" : "+33 999 999 110",
+        "map" : "https://www.google.com/maps",
+        "area" : 1
+    },
+    {
+        "img" : "./imgs/dealer10.jpg",
+        "name" : "Super U et Drive",
+        "timeOppen" : "7:00",
+        "timeLose" : "23:00",
+        "dress" : "170 Rue de la Nouvelle France, 93100 Montreuil, France",
+        "number" : "+33 654 334 123",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer11.jpg",
+        "name" : "Carrefour Express",
+        "timeOppen" : "8:00",
+        "timeLose" : "21:00",
+        "dress" : "80 Bd de Courtais, 03100 Montluçon, France",
+        "number" : "+33 324 846 718",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer12.jpg",
+        "name" : "Casino supermarché",
+        "timeOppen" : "8:00",
+        "timeLose" : "22:00",
+        "dress" : "Pl. de Vénétie, 75013 Paris, France",
+        "number" : "+33 305 845 054",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer13.jpg",
+        "name" : "Market Sarlat-La-Caneda",
+        "timeOppen" : "7:00",
+        "timeLose" : "21:00",
+        "dress" : "Rte de Brive, 24200 Sarlat-la-Canéda, France",
+        "number" : "+33 305 995 054",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer14.jpg",
+        "name" : "Intermarché SUPER Clermont-Ferrand",
+        "timeOppen" : "8:00",
+        "timeLose" : "22:00",
+        "dress" : "98 Rue Fontgieve, 63000 Clermont-Ferrand, France",
+        "number" : "+33 730 770 054",
+        "map" : "https://www.google.com/maps",
+        "area" : 2
+    },
+    {
+        "img" : "./imgs/dealer15.jpg",
+        "name" : "Intermarché SUPER Sainte-Feyre",
+        "timeOppen" : "8:00",
+        "timeLose" : "22:00",
+        "dress" : "1 Le Verger, 23000 Sainte-Feyre, France",
+        "number" : "+33 213 000 054",
+        "map" : "https://www.google.com/maps",
+        "area" : 1
+    }
+];
+
+var productObj = [
+    {
+        "type" : "aquafina",
+        "img" : "./imgs/product-1.png",
+        "name" : "Aquafina",
+        "new" : "",
+        "content" : "Aquafina’s reverse osmosis purification system means pure water and perfect taste every time. <br><br> Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages.",
+    },
+    {
+        "type" : "aquafina",
+        "img" : "./imgs/product-2.png",
+        "name" : "AQUAFINA GRAPE",
+        "new" : "./imgs/new.png",
+        "content":"Water + fun, Aquafina FlavorSplash has delicious fruit flavor and 0 calories. Make a Splash.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "aquafina",
+        "img" : "./imgs/product-3.png",
+        "name" : "Aquafina Raspberry",
+        "new" : "./imgs/new.png",
+        "content":"Water + fun, Aquafina FlavorSplash has delicious fruit flavor and 0 calories. Make a Splash.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "aquafina",
+        "img" : "./imgs/product-4.png",
+        "name" : "Aquafina Wild Berry",
+        "new" : "./imgs/new.png",
+        "content":"Water + fun, Aquafina FlavorSplash has delicious fruit flavor and 0 calories. Make a Splash.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-5.png",
+        "name" : "Bubly blood orange grapefruit",
+        "new" : "",
+        "content":"bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-7.png",
+        "name" : "Bubly bounce drops - citrus cherry",
+        "new" : "./imgs/new.png",
+        "content":"bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-6.png",
+        "name" : "Bubly blueberry pomegranate",
+        "new" : "",
+        "content":"bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-8.png",
+        "name" : "bubly drops - grapefruit",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-9.png",
+        "name" : "Caffeine Free Diet Mtn Dew",
+        "new" : "",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-10.png",
+        "name" : "Mtn Dew Major Melon",
+        "new" : "./imgs/new.png",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-11.png",
+        "name" : "Nitro Pepsi Draft Cola",
+        "new" : "./imgs/new.png",
+        "content":"Nitro Pepsi is the first-ever nitrogen-infused cola that is smooth, creamy, and easy-to-drink. To best experience Nitro Pepsi: chill the can, pour hard, and enjoy.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-12.png",
+        "name" : "Diet Pepsi Vanilla",
+        "new" : "./imgs/new.png",
+        "content":"With its light, crisp taste, Diet Pepsi gives you all the refreshment you need - with zero sugar, zero calories and zero carbs. Light. Crisp. Refreshing. Diet Pepsi. Nothing refreshes like a Diet Pepsi.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-13.png",
+        "name" : "Pepsi True",
+        "new" : "",
+        "content":"A new kind of cola made for True carefree enjoyment. All the fun you love about Pepsi with 30% less sugar than regular Pepsi and no artificial sweeteners.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-14.png",
+        "name" : "Pepsi Zero Sugar Vanilla",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-15.png",
+        "name" : "Bubly caffeinated - citrus cherry",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-16.png",
+        "name" : "Bubly mango passion fruit",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-17.png",
+        "name" : "Bubly caffeinated - triple berry",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-18.png",
+        "name" : "Bubly sparkling - blackberry",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-19.png",
+        "name" : "Bubly sparkling - grapefruit",
+        "new" : "",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-20.png",
+        "name" : "Bubly sparkling - lime",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "bubly",
+        "img" : "./imgs/product-21.png",
+        "name" : "Bubly sparkling - strawberry",
+        "new" : "./imgs/new.png",
+        "content":"Bubly bounce is a caffeinated sparkling water that pairs crisp sparkling water, great-tasting natural fruit flavors and just a little kick of caffeine to provide a delicious taste with no calories, no sweeteners, all smiles. <br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-22.png",
+        "name" : "Mtn Dew Frost Bite",
+        "new" : "./imgs/new.png",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-23.png",
+        "name" : "Mtn Dew Live Wire",
+        "new" : "./imgs/new.png",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-24.png",
+        "name" : "Mtn Dew Maui Burst",
+        "new" : "./imgs/new.png",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-25.png",
+        "name" : "Mtn Dew Real Sugar",
+        "new" : "",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "mtn Dew",
+        "img" : "./imgs/product-26.png",
+        "name" : "Mtn Dew Spark Zero Sugar",
+        "new" : "./imgs/new.png",
+        "content":"All the great taste and intensity of DEW without the calories<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-27.png",
+        "name" : "Diet Pepsi SodaStream",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-28.png",
+        "name" : "Pepsi Berry",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-29.png",
+        "name" : "Pepsi SodaStream",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-30.png",
+        "name" : "Pepsi Wild Cherry (can)",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-31.png",
+        "name" : "Pepsi Zero Sugar Mango",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    },
+    {
+        "type" : "pepsi",
+        "img" : "./imgs/product-32.png",
+        "name" : "Pepsi Zero Sugar SodaStream",
+        "new" : "./imgs/new.png",
+        "content":"The sweet, creamy flavor of vanilla adds an exciting dimension to Pepsi Zero Sugar Vanilla, the only cola with zero sugar and max Pepsi taste.<br><br>Product formulation, packaging and promotions may change. For current information, refer to packaging on store shelves. Information may also differ from package labels because of the limited space on some packages."
+    }
+]
+
+
