@@ -84,6 +84,7 @@ function oppenPopup(index) {
                 <div class="close-popup" onclick="losePopup()">&times;</div>
                 `
     popup.style.display = "flex"
+    if(screen.width<600)popup.style.display = "block"
     document.getElementsByClassName("over-layer")[0].style.display = "block"
     document.getElementsByClassName("over-layer")[0].addEventListener("click",function(){
         losePopup()
@@ -113,7 +114,7 @@ function showAll() {
     for(var i=20;i<productObj.length;i++){
         loadDealer(productObj[i],i)
     }
-    document.getElementsByClassName("showMore")[0].getElementsByTagName("span")[1].style.display ="none"
+    document.getElementsByClassName("showMore")[0].style.display ="none"
 }
 
 

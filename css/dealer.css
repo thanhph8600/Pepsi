@@ -552,6 +552,9 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .product-content{
+        width: 90%;
+    }
     .product-content__title ul{
         display: none;
     }
@@ -662,6 +665,38 @@ footer{
         padding: 20px 0;
     }
 
+
+    .first-section__title{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 1.2em;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .first-section{
+        width: 90%;
+        padding: 0;
+    }
+    .first-section__content{
+        padding-bottom: 15px;
+    }
+    .product-content{
+        width: 95%;
+    }
     .product-content__item{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
@@ -670,13 +705,63 @@ footer{
     
     .first-section__content{
         grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
     }
+    
+
+    
+.product-popup{
+    width: 90%;
+    gap: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+.product-popup .product-popup__img{
+    width: 70%;
+    margin: 0 auto;
+}
+.product-popup .product-popup__img img {
+    width: 40%;
+}
+.product-popup__info{
+    width: 100%;
+    padding: 0;
+    border-left: none;
+}
+.product-popup__info h2{
+    font-size: 1.5em;
+    padding: 10px;
+}
+.product-popup__info p{
+    padding: 10px;
+}
+.close-popup {
+    position: absolute;
+    top: 10px ;
+    right: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+
+
 
     .footer-container{
-        display: block;
+        display: block !important;
         text-align: center;
+    }
+    .footer__content{
+        display: block;
+        padding: 10px 0;
+    }
+    .footer__content p{
+        padding: 10px 0;
     }
     .footer__logo{
         margin:  0 auto;
+    }
+    .footer__icons {
+        padding-top: 25px;
     }
 }
