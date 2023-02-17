@@ -333,6 +333,7 @@ header .icon-open-nav {
     padding: 15px;
     border-radius: 7px;
     position: relative;
+    overflow: hidden;
 }
 .product-content__item__box__name{
     padding: 5px 0;
@@ -350,6 +351,17 @@ header .icon-open-nav {
     cursor: pointer;
     color: white;
     display: none;
+    animation:loadSearch .5s ease;
+}
+@keyframes loadSearch {
+    from{
+        transform: translateY(600px) ;
+    }
+    to{
+        top:  50% ;
+        left: 50%;
+        transform: translateX(0) translate(-50%,-50%);
+    }
 }
 .product-content__item__box__new {
     position: absolute;

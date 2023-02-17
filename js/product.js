@@ -123,11 +123,16 @@ function filter(type) {
     document.getElementById("product-item").innerHTML=""
     console.log(type)
     if(type=="All"){
-        document.getElementsByClassName("showMore")[0].style.display = "block"
+        // document.getElementsByClassName("showMore")[0].style.display = "block"
         for(var i=0;i<10;i++){
             loadDealer(productObj[i],i)
         }
-        document.getElementsByClassName("showMore")[0].getElementsByTagName("span")[0].style.display ="block"
+        document.getElementsByClassName("showMore")[0].style.display ="block"
+    document.getElementsByClassName("showMore")[0].getElementsByTagName("span")[1].style.display ="none"
+    document.getElementsByClassName("showMore")[0].getElementsByTagName("span")[0].style.display ="block"
+
+
+        // document.getElementsByClassName("showMore")[0].getElementsByTagName("span")[0].style.display ="block"
 
     }else{
         document.getElementsByClassName("showMore")[0].style.display = "none"
