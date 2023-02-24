@@ -609,16 +609,25 @@ footer{
     }
 
 
-    .footer-container{
-        display: block;
-        text-align: center;
+ 
+    .footer__logo {
+        margin: 0 auto;
     }
-    .footer-container div{
+    .footer-container {
+        display: block;
+        padding: 25px 0;
+    }
+    .footer__content{
+        display: flex;
+        padding: 15px 0;
+        width: 100% ; 
+
+    }
+    .footer__content p{
         padding: 10px 0;
     }
-
-    .footer__logo{
-        margin:  0 auto;
+    .footer__icons {
+        text-align: center;
     }
 
 }
@@ -787,21 +796,27 @@ footer{
 
 
 
-    .footer-container{
-        display: block !important;
-        text-align: center;
-    }
-    .footer__content{
-        display: block;
-        padding: 10px 0;
-    }
-    .footer__content p{
-        padding: 10px 0;
-    }
-    .footer__logo{
-        margin:  0 auto;
-    }
-    .footer__icons {
-        padding-top: 25px;
-    }
+
+
+.footer-container{
+        
+    text-align: center;
+
+}
+.footer__content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer__content p{
+    padding: 10px 0;
+    display: block;
+}
+.footer__logo{
+    margin:  0 auto;
+}
+.footer__icons {
+    padding-top: 25px;
+}
 }
